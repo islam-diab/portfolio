@@ -16,6 +16,10 @@ const skills = [
   { name: "Clean Architecture", icon: Layout },
   { name: "State Management", icon: Package },
   { name: "Firebase", icon: Database },
+  { name: "Cubit", icon: Package },
+  { name: "Retrofit", icon: Database },
+  { name: "WebSockets", icon: Database },
+  { name: "Git & GitHub", icon: Code },
 ];
 
 export function Skills() {

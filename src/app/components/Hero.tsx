@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
 
 export function Hero() {
@@ -78,6 +78,14 @@ export function Hero() {
             >
               Contact Me
             </a>
+            <a
+              href="/Islam-Salama-Diab.pdf"
+              download
+              className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg transition-all duration-200 border border-border hover:border-purple-500/50 hover:scale-105 flex items-center gap-2"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
+            </a>
           </motion.div>
 
           <motion.div
@@ -87,7 +95,7 @@ export function Hero() {
             className="flex items-center justify-center gap-6"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/islam-diab"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-purple-400 transition-colors"
@@ -96,7 +104,7 @@ export function Hero() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/islamdiab07/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-purple-400 transition-colors"

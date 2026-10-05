@@ -9,7 +9,7 @@ export function About() {
   const highlights = [
     {
       icon: Code,
-      title: "2+ Years Experience",
+      title: "2 Years Experience",
       description: "Specializing in Flutter development for enterprise applications",
     },
     {
@@ -46,7 +46,7 @@ export function About() {
           >
             <div className="prose prose-lg prose-invert">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I'm a passionate Flutter developer with over a year of experience in building
+                I'm a Cairo-based Flutter developer with 2 years of experience building
                 high-quality mobile applications. My expertise lies in creating robust POS systems
                 and e-commerce solutions that help businesses scale efficiently.
               </p>
