@@ -14,8 +14,10 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    // No backend: open the visitor's email app with the message prefilled.
+    const subject = encodeURIComponent(`Portfolio inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\n${formData.name}\n${formData.email}`);
+    window.location.href = `mailto:islamdiab304@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

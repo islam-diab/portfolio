@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "motion/react";
 import { ExternalLink, Github } from "lucide-react";
 import { useInView } from "./useInView";
+import houldaImage from "../../assets/HOULDA.png";
+import zakhamImage from "../../assets/ZAKHAM.png";
 
 const projects = [
   {
@@ -9,21 +11,22 @@ const projects = [
     title: "Houlda – Multi-Brand Food Ordering App",
     description:
       "Multi-brand food ordering: customers choose a brand, then browse with category filtering and local search powered by BLoC. Full checkout with cart management, coupon validation, and order processing. Google Maps for location selection and branch-based routing; QR-based dine-in ordering at the table; payment integrations including Tabby and MyFatoorah.",
-    image: "/src/assets/HOULDA.png",
+    image: houldaImage,
     techStack: ["Flutter", "BLoC", "Google Maps", "QR", "Tabby", "MyFatoorah"],
-    liveUrl: "#",
-    githubUrl: "#",
+    // Leave a link empty to hide its button.
+    liveUrl: "",
+    githubUrl: "",
     featured: true,
   },
   {
     id: 2,
-    title: "Falafina POS System",
+    title: "Falafina – Restaurant Ordering App",
     description:
       "Complete food ordering mobile app for a local restaurant in Flutter. Item browsing, cart management, and order tracking with RESTful APIs for dynamic menu and orders. Clean, responsive UI with consistent theming and Cubit state management for scalability.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     techStack: ["Flutter", "Cubit", "REST APIs"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     featured: true,
   },
   {
@@ -31,10 +34,10 @@ const projects = [
     title: "Zakham – Digital Invitation",
     description:
       "Digital invitation app that generates elegant event cards with integrated QR codes. WhatsApp sharing for one-tap delivery to guests; QR scanning for automated attendance and real-time verification. Clean, responsive UI with an optimized event management flow.",
-    image: "/src/assets/ZAKHAM.png",
+    image: zakhamImage,
     techStack: ["Flutter", "QR", "WhatsApp"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     featured: false,
   },
   {
@@ -44,8 +47,8 @@ const projects = [
       "Discover nearby supermarkets, hospitals, and more. Users can add new locations when missing, expanding the database dynamically. Rich place details—name, image, type, contact, and Google Maps location—with advanced, user-friendly search.",
     image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop",
     techStack: ["Flutter", "Google Maps", "Search"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     featured: false,
   },
   {
@@ -55,8 +58,8 @@ const projects = [
       "Comprehensive payment solution integrating multiple payment providers for seamless transactions.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     techStack: ["Flutter", "MyFatoorah", "Tabby", "Tamara"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "",
+    githubUrl: "",
     featured: false,
   },
 ];
@@ -106,21 +109,32 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           ))}
         </div>
 
-        <div className="flex gap-3">
-          <a
-            href={project.liveUrl}
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-all duration-200 hover:scale-105"
-          >
-            <ExternalLink className="w-4 h-4" />
-            Live Demo
-          </a>
-          <a
-            href={project.githubUrl}
-            className="flex items-center justify-center gap-2 px-4 py-2 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg transition-all duration-200 border border-border hover:border-purple-500/50"
-          >
-            <Github className="w-4 h-4" />
-          </a>
-        </div>
+        {(project.liveUrl || project.githubUrl) && (
+          <div className="flex gap-3">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-all duration-200 hover:scale-105"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Live Demo
+              </a>
+            )}
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${project.title} source code`}
+                className="flex items-center justify-center gap-2 px-4 py-2 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg transition-all duration-200 border border-border hover:border-purple-500/50"
+              >
+                <Github className="w-4 h-4" />
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </motion.div>
   );

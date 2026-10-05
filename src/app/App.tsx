@@ -5,6 +5,7 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Specialization } from "./components/Specialization";
 import { About } from "./components/About";
+import { Experience } from "./components/Experience";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import React from "react";
@@ -23,6 +24,7 @@ export default function App() {
         <Skills />
         <Specialization />
         <About />
+        <Experience />
         <Contact />
       </main>
       <Footer />
