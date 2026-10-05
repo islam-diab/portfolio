@@ -79,7 +79,7 @@ export function Hero() {
               Contact Me
             </a>
             <a
-              href="/Islam-Salama-Diab.pdf"
+              href={`${import.meta.env.BASE_URL}Islam-Salama-Diab.pdf`}
               download
               className="px-8 py-3 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg transition-all duration-200 border border-border hover:border-purple-500/50 hover:scale-105 flex items-center gap-2"
             >
