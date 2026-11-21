@@ -45,7 +45,7 @@ export function Hero() {
               Flutter Developer
             </h2>
             <p className="text-xl sm:text-2xl text-muted-foreground">
-              POS & E-commerce Apps Specialist
+              Healthcare, Food Ordering & Event Apps
             </p>
           </motion.div>
 
@@ -55,8 +55,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
           >
-            Building scalable, high-performance mobile applications with Flutter.
-            Specialized in POS systems and multi-brand e-commerce solutions.
+            About 2 years shipping production apps to the App Store and Google Play,
+            with BLoC/Cubit, Clean Architecture, Firebase, REST APIs and Gulf-market payment gateways.
           </motion.p>
 
           <motion.div

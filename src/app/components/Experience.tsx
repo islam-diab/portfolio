@@ -6,37 +6,34 @@ import React from "react";
 const experience = [
   {
     role: "Flutter Developer",
-    company: "Zkham Dev",
-    period: "03/2025 – Present",
+    company: "Duma Digital Solutions",
+    period: "09/2026 – Present",
     points: [
-      "Delivered features integrating Google Maps, Firebase Notifications, and REST APIs.",
-      "Applied Cubit state management to build scalable, testable, and maintainable codebases.",
+      "Built Citadel, a clinic app (services, doctors, available slots, booking) end to end as the sole mobile developer; live on the App Store and Google Play.",
+      "Stack: BLoC, Dio (REST APIs), Firebase.",
     ],
   },
   {
     role: "Flutter Developer",
+    company: "Zakham Dev",
+    period: "03/2025 – 09/2026",
+    points: [
+      "Houlda (multi-brand food ordering, BLoC): category filters, local search, cart, coupons, checkout, Google Maps branch routing, QR dine-in ordering, Tabby and MyFatoorah payments.",
+      "Falafina (restaurant ordering, Cubit): menu, cart and order tracking over REST APIs.",
+      "Zakham Invitations: QR event cards, one-tap WhatsApp sharing and QR guest check-in.",
+    ],
+  },
+  {
+    role: "Flutter Developer (Contract)",
     company: "BayanatZ",
     period: "02/2025 – 03/2025",
-    points: [
-      "Developed and maintained a task management mobile application using Flutter.",
-      "Conducted code reviews and mentoring, increasing team code quality and reducing bugs.",
-      "Drove efficient team communication and task management, improving team velocity.",
-    ],
-  },
-  {
-    role: "Flutter Developer",
-    company: "CodeAlpha",
-    period: "",
-    points: [
-      "Language Learning App: Japanese vocabulary and phrases in categorized lists, with quizzes to track progress.",
-      "Flashcard Quiz App: create and study custom flashcards, with score tracking.",
-    ],
+    points: ["Developed features for a task management app in Flutter."],
   },
 ];
 
 const education = {
-  degree: "Bachelor's Degree in Computer Science",
-  school: "City of Culture and Science, Higher Institute of Computer Science",
+  degree: "B.Sc. in Computer Science",
+  school: "Higher Institute of Computer Science, City of Culture and Science, 6th of October City",
   period: "2018 – 2022",
 };
 
