@@ -6,20 +6,20 @@ import React from "react";
 const skills = [
   { name: "Flutter", icon: Code },
   { name: "Dart", icon: Code },
-  { name: "BLoC", icon: Package },
-  { name: "REST APIs", icon: Database },
-  { name: "Payment Integration", icon: CreditCard },
-  { name: "Google Maps", icon: MapPin },
-  { name: "MyFatoorah", icon: CreditCard },
-  { name: "Tabby", icon: CreditCard },
-  { name: "Tamara", icon: CreditCard },
+  { name: "BLoC / Cubit", icon: Package },
+  { name: "Provider & GetX", icon: Package },
   { name: "Clean Architecture", icon: Layout },
-  { name: "State Management", icon: Package },
+  { name: "Responsive UI", icon: Layout },
+  { name: "REST APIs", icon: Database },
+  { name: "Dio", icon: Database },
   { name: "Firebase", icon: Database },
-  { name: "Cubit", icon: Package },
-  { name: "Retrofit", icon: Database },
-  { name: "WebSockets", icon: Database },
+  { name: "Google Maps", icon: MapPin },
+  { name: "QR Codes", icon: Code },
+  { name: "Tabby", icon: CreditCard },
+  { name: "MyFatoorah", icon: CreditCard },
   { name: "Git & GitHub", icon: Code },
+  { name: "App Store & Play Console", icon: Package },
+  { name: "Claude Code", icon: Code },
 ];
 
 export function Skills() {
@@ -38,7 +38,7 @@ export function Skills() {
           <span className="text-purple-400 font-semibold mb-2 block">Technical Expertise</span>
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Skills & Technologies</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Proficient in modern Flutter development and integrated payment solutions
+            Flutter, state management, backend integrations and store delivery
           </p>
         </motion.div>
 

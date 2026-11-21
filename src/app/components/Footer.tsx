@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-2">Islam Diab</h3>
             <p className="text-muted-foreground text-sm">
-              Flutter Developer specializing in POS & E-commerce Apps
+              Flutter Developer building healthcare, food ordering and event apps
             </p>
           </div>
 

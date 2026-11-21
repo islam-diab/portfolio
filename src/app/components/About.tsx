@@ -9,8 +9,8 @@ export function About() {
   const highlights = [
     {
       icon: Code,
-      title: "2 Years Experience",
-      description: "Specializing in Flutter development for enterprise applications",
+      title: "4 Apps in Production",
+      description: "Citadel, Houlda, Falafina and Zakham, live on the App Store and Google Play",
     },
     {
       icon: Award,
@@ -19,8 +19,8 @@ export function About() {
     },
     {
       icon: Rocket,
-      title: "Fast Delivery",
-      description: "Efficient development process with attention to detail",
+      title: "End-to-End Delivery",
+      description: "From UI and state management to APIs, payments and store release",
     },
   ];
 
@@ -46,20 +46,17 @@ export function About() {
           >
             <div className="prose prose-lg prose-invert">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I'm a Cairo-based Flutter developer with 2 years of experience building
-                high-quality mobile applications. My expertise lies in creating robust POS systems
-                and e-commerce solutions that help businesses scale efficiently.
+                I'm a Cairo-based Flutter developer with about 2 years of experience shipping
+                production apps to the App Store and Google Play in healthcare, food ordering and events.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I specialize in implementing clean architecture patterns, ensuring my applications
-                are maintainable, testable, and scalable. From state management with BLoC to
-                integrating complex payment gateways, I deliver solutions that meet real-world
-                business needs.
+                At Duma Digital Solutions I built Citadel, a clinic booking app, end to end as the sole
+                mobile developer. Before that, at Zakham Dev, I worked on Houlda, a multi-brand food
+                ordering app, Falafina, and Zakham Invitations.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My focus is on writing clean, efficient code and creating seamless user experiences.
-                I'm constantly learning and staying up-to-date with the latest Flutter developments
-                to provide the best solutions for my clients.
+                I work with BLoC/Cubit, Clean Architecture, Firebase, REST APIs and Gulf-market payment
+                gateways like Tabby and MyFatoorah, with a focus on clean UI and maintainable code.
               </p>
             </div>
           </motion.div>

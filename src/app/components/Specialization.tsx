@@ -1,26 +1,26 @@
 import { motion } from "motion/react";
-import { ShoppingCart, CreditCard, Smartphone } from "lucide-react";
+import { ShoppingCart, CreditCard, Stethoscope } from "lucide-react";
 import { useInView } from "./useInView";
 import React from "react";
 
 const specializations = [
   {
-    icon: Smartphone,
-    title: "POS Systems",
-    description: "Building robust point-of-sale systems with inventory management, sales tracking, and multi-payment support for retail businesses.",
-    features: ["Inventory Management", "Sales Analytics", "Receipt Printing", "Multi-Payment"],
+    icon: Stethoscope,
+    title: "Healthcare & Booking",
+    description: "Clinic apps where patients browse services and doctors, see available slots and book appointments.",
+    features: ["Services & Doctors", "Available Slots", "Booking Flow", "Firebase"],
   },
   {
     icon: ShoppingCart,
-    title: "E-commerce Apps",
-    description: "Creating scalable multi-brand e-commerce applications with smooth UX, real-time updates, and comprehensive shopping features.",
-    features: ["Product Catalog", "Shopping Cart", "Order Tracking", "Multi-Brand Support"],
+    title: "Food Ordering",
+    description: "Multi-brand and restaurant ordering apps with search, cart, coupons, checkout, branch routing and QR dine-in.",
+    features: ["Multi-Brand Support", "Cart & Coupons", "Google Maps Routing", "QR Dine-In"],
   },
   {
     icon: CreditCard,
     title: "Payment Integration",
-    description: "Seamless integration of multiple payment gateways including MyFatoorah, Tabby, and Tamara for secure transactions.",
-    features: ["MyFatoorah", "Tabby BNPL", "Tamara", "Secure Checkout"],
+    description: "Gulf-market payment gateways integrated into checkout flows, including Tabby and MyFatoorah.",
+    features: ["Tabby BNPL", "MyFatoorah", "Secure Checkout"],
   },
 ];
 
@@ -46,7 +46,7 @@ export function Specialization() {
           <span className="text-purple-400 font-semibold mb-2 block">Expertise</span>
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">What I Do Best</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Specialized solutions for modern business needs
+            The kinds of apps I build and ship
           </p>
         </motion.div>
 
