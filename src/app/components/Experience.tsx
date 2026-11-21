@@ -23,15 +23,6 @@ const experience = [
       "Drove efficient team communication and task management, improving team velocity.",
     ],
   },
-  {
-    role: "Flutter Developer",
-    company: "CodeAlpha",
-    period: "",
-    points: [
-      "Language Learning App: Japanese vocabulary and phrases in categorized lists, with quizzes to track progress.",
-      "Flashcard Quiz App: create and study custom flashcards, with score tracking.",
-    ],
-  },
 ];
 
 const education = {

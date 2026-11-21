@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Play, Apple } from "lucide-react";
 import { useInView } from "./useInView";
 import houldaImage from "../../assets/HOULDA.png";
 import zakhamImage from "../../assets/ZAKHAM.png";
@@ -14,6 +14,8 @@ const projects = [
     image: houldaImage,
     techStack: ["Flutter", "BLoC", "Google Maps", "QR", "Tabby", "MyFatoorah"],
     // Leave a link empty to hide its button.
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.zakham.hulda_app",
+    appStoreUrl: "https://apps.apple.com/us/app/id6761376628",
     liveUrl: "",
     githubUrl: "",
     featured: true,
@@ -25,6 +27,8 @@ const projects = [
       "Complete food ordering mobile app for a local restaurant in Flutter. Item browsing, cart management, and order tracking with RESTful APIs for dynamic menu and orders. Clean, responsive UI with consistent theming and Cubit state management for scalability.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     techStack: ["Flutter", "Cubit", "REST APIs"],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.zakham.falafina",
+    appStoreUrl: "",
     liveUrl: "",
     githubUrl: "",
     featured: true,
@@ -36,6 +40,8 @@ const projects = [
       "Digital invitation app that generates elegant event cards with integrated QR codes. WhatsApp sharing for one-tap delivery to guests; QR scanning for automated attendance and real-time verification. Clean, responsive UI with an optimized event management flow.",
     image: zakhamImage,
     techStack: ["Flutter", "QR", "WhatsApp"],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.zakham.invitation",
+    appStoreUrl: "",
     liveUrl: "",
     githubUrl: "",
     featured: false,
@@ -47,6 +53,8 @@ const projects = [
       "Discover nearby supermarkets, hospitals, and more. Users can add new locations when missing, expanding the database dynamically. Rich place details—name, image, type, contact, and Google Maps location—with advanced, user-friendly search.",
     image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop",
     techStack: ["Flutter", "Google Maps", "Search"],
+    playStoreUrl: "",
+    appStoreUrl: "",
     liveUrl: "",
     githubUrl: "",
     featured: false,
@@ -58,6 +66,8 @@ const projects = [
       "Comprehensive payment solution integrating multiple payment providers for seamless transactions.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     techStack: ["Flutter", "MyFatoorah", "Tabby", "Tamara"],
+    playStoreUrl: "",
+    appStoreUrl: "",
     liveUrl: "",
     githubUrl: "",
     featured: false,
@@ -109,8 +119,30 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           ))}
         </div>
 
-        {(project.liveUrl || project.githubUrl) && (
-          <div className="flex gap-3">
+        {(project.playStoreUrl || project.appStoreUrl || project.liveUrl || project.githubUrl) && (
+          <div className="flex flex-wrap gap-3">
+            {project.playStoreUrl && (
+              <a
+                href={project.playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-all duration-200 hover:scale-105"
+              >
+                <Play className="w-4 h-4" />
+                Google Play
+              </a>
+            )}
+            {project.appStoreUrl && (
+              <a
+                href={project.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-secondary hover:bg-secondary/80 text-foreground rounded-lg transition-all duration-200 border border-border hover:border-purple-500/50"
+              >
+                <Apple className="w-4 h-4" />
+                App Store
+              </a>
+            )}
             {project.liveUrl && (
               <a
                 href={project.liveUrl}
